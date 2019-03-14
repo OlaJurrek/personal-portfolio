@@ -1,0 +1,117 @@
+// Header
+header {
+  position: fixed;
+  top: 1.5rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  z-index: 3;
+  .logo {
+    height: 2.5rem;
+    padding-left: 45px;
+    color: $decorative-color;
+    font-family: "Poiret One", cursive;
+    font-size: 1.3rem;
+    background: url(../images/circle-outline-48.png) no-repeat;
+    // background-position: 0 0.3rem;
+    background-size: 1.8rem;
+  }
+}
+
+// Menu icon and navigation
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.menu-icon {
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+  .line {
+    width: 40px;
+    height: 3px;
+    margin-top: 5px;
+    background: $primary-color;
+    border-radius: 5px;
+  }
+  .line:last-child {
+    width: 25px;
+  }
+}
+
+.menu-list {
+  background: $decorative-color;
+  padding: 1rem 1.5rem;
+  width: 180px;
+  display: none;
+  &.show {
+    display: block;
+  }
+  .menu-item {
+    list-style: none;
+    text-align: end;
+    line-height: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $light;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+  color: $primary-color;
+}
+
+h1 {
+  font-size: 3rem;
+  color: $decorative-color;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  span {
+    font-weight: 600;
+    color: darken($decorative-color, 15%);
+  }
+}
+
+#home {
+  height: 100vh;
+  background: url(../images/bg.jpg) no-repeat;
+  background-size: cover;
+  .intro {
+    position: relative;
+    padding-top: 40vh;
+    z-index: 1;
+    &::after {
+      content: "";
+      border: 3px solid lighten($decorative-color, 10%);
+      height: 210px;
+      width: 190px;
+      position: absolute;
+      top: 36vh;
+      left: -30px;
+      //   right: -20px;
+      z-index: -1;
+    }
+    span {
+      font-weight: 600;
+      color: darken($decorative-color, 15%);
+    }
+  }
+}

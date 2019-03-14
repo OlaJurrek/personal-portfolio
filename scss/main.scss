@@ -1,5 +1,4 @@
-$text-color: #777;
-
-body {
-  color: red;
-}
+@import "helpers";
+@import "basics";
+@import "intro";
+@import "sections";
