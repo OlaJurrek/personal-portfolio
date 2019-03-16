@@ -21,45 +21,73 @@ a {
 
 header {
   position: fixed;
-  top: 1.5rem;
   left: 0;
   right: 0;
-  display: flex;
-  justify-content: space-between;
+  padding: 0.8rem 0;
   z-index: 3; }
-  header .logo {
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #405f94;
+  font-family: "Poiret One", cursive;
+  font-size: 1.3rem; }
+  .logo img {
     height: 2.5rem;
-    padding-left: 45px;
-    color: #405f94;
-    font-family: "Poiret One", cursive;
-    font-size: 1.3rem;
-    background: url(../images/circle-outline-48.png) no-repeat;
-    background-size: 1.8rem; }
+    width: 2.5rem; }
+  .logo span {
+    padding-left: 1rem;
+    transition: all 0.3s ease-in-out; }
+
+.changed-header header {
+  background-color: rgba(230, 230, 230, 0.8); }
+
+.changed-header .logo span {
+  opacity: 0; }
 
 nav {
   display: flex;
   flex-direction: column;
-  align-items: flex-end; }
+  align-items: flex-end;
+  position: relative; }
 
 .menu-icon {
-  margin-bottom: 1.5rem;
-  cursor: pointer; }
+  cursor: pointer;
+  position: relative;
+  background: transparent;
+  padding-bottom: 20px;
+  color: #292929; }
   .menu-icon .line {
-    width: 40px;
-    height: 3px;
+    position: absolute;
+    top: 22px;
+    width: 70%;
+    height: 2.5px;
     margin-top: 5px;
     background: #292929;
-    border-radius: 5px; }
+    border-radius: 5px;
+    transition: 0.5s ease all 0.3s; }
   .menu-icon .line:last-child {
-    width: 25px; }
+    top: 30px;
+    width: 25px;
+    width: 40%; }
+
+.menu-icon:hover .line {
+  width: 100%; }
 
 .menu-list {
+  position: absolute;
+  top: 55px;
   background: #405f94;
   padding: 1rem 1.5rem;
   width: 180px;
-  display: none; }
+  opacity: 0;
+  transition: all 0.5s ease-out; }
   .menu-list.show {
-    display: block; }
+    opacity: 1; }
   .menu-list .menu-item {
     list-style: none;
     text-align: end;
