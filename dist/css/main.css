@@ -72,11 +72,9 @@ nav {
     transition: 0.5s ease all 0.3s; }
   .menu-icon .line:last-child {
     top: 30px;
-    width: 25px;
     width: 40%; }
-
-.menu-icon:hover .line {
-  width: 100%; }
+  .menu-icon:hover .line {
+    width: 100%; }
 
 .menu-list {
   position: absolute;
@@ -85,8 +83,10 @@ nav {
   padding: 1rem 1.5rem;
   width: 180px;
   opacity: 0;
+  visibility: hidden;
   transition: all 0.5s ease-out; }
   .menu-list.show {
+    visibility: visible;
     opacity: 1; }
   .menu-list .menu-item {
     list-style: none;
@@ -100,6 +100,8 @@ nav {
     transition: all 0.3s ease-out; }
     .menu-list .menu-item:hover {
       color: #292929; }
+    .menu-list .menu-item a {
+      display: block; }
 
 h1,
 h2,

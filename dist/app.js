@@ -12,12 +12,19 @@ function toggleMenu() {
   }
 }
 
+// Close menu list if outside click
+// const nav = document.querySelector("nav");
+
+document.addEventListener("click", clickOutside);
+
+function clickOutside(e) {
+  if (!e.target.closest(".menu-list") && !e.target.closest(".menu-icon")) {
+    menuList.classList.remove("show");
+  }
+}
+
 // Change header style below home section
 const home = document.getElementById("home");
-// const headerHeight = home.previousElementSibling.offsetHeight;
-const breakingPoint =
-  home.offsetHeight - home.previousElementSibling.offsetHeight;
-
 const bottomOfHome = home.offsetHeight;
 
 window.addEventListener("scroll", changeHeader);
