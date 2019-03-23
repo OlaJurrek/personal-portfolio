@@ -3,10 +3,15 @@
 }
 
 .image-wrapper {
-  background: url(../images/ptink.png) no-repeat;
+  background: url(../images/clocks-code.png) no-repeat;
+
+  img {
+    // object-fit: cover;
+    transition: all 0.3s ease-in-out;
+  }
 }
 .image-wrapper:hover img {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .img-right {
@@ -27,8 +32,4 @@
   flex-direction: column;
   // justify-content: space-between;
   align-items: center;
-}
-
-.lorem {
-  font-family: "Inconsolata", monospace;
 }
