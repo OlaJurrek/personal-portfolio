@@ -1,4 +1,6 @@
-@import "helpers";
-@import "basics";
-@import "intro";
-@import "sections";
+@import "./helpers.scss";
+@import "./basics.scss";
+@import "./intro";
+@import "_buttons.scss";
+@import "./sections";
+@import "./projects";
