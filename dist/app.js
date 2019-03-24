@@ -37,35 +37,3 @@ function changeHeader() {
     document.body.classList.remove("changed-header");
   }
 }
-
-// On scroll animation - pendulous headings
-
-function debounce(func, wait = 20, immediate = true) {
-  var timeout;
-  return function() {
-    var context = this,
-      args = arguments;
-    var later = function() {
-      timeout = null;
-      if (!immediate) func.apply(context, args);
-    };
-    var callNow = immediate && !timeout;
-    clearTimeout(timeout);
-    timeout = setTimeout(later, wait);
-    if (callNow) func.apply(context, args);
-  };
-}
-
-const pendulums = document.querySelectorAll(".section-heading");
-
-window.addEventListener("scroll", debounce(swing));
-
-function swing(e) {
-  pendulums.forEach(pendulum => {
-    const swingAt = window.scrollY + window.innerHeight;
-    console.log(swingAt, pendulum.offsetTop);
-    if (swingAt > pendulum.offsetTop) {
-      pendulum.classList.add("pendulum");
-    }
-  });
-}
