@@ -1,0 +1,98 @@
+.skills-rain {
+  // position: relative;
+  display: flex;
+  // justify-content: spac;
+  margin: auto;
+  width: 500px;
+  height: 80%;
+  padding: 10px;
+  // padding: 0 40px;
+  padding-left: 20px;
+  padding-right: 40px;
+  border: 10px solid $primary-color;
+  box-shadow: inset 0 0 0 1px #777;
+  background-color: $primary-color;
+  overflow: hidden;
+  p {
+    position: relative;
+    font-size: 1rem;
+    flex: 1;
+    span {
+      position: absolute;
+      top: -15%;
+      animation-name: falling;
+      animation-duration: 7s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+  p:nth-of-type(1) {
+    color: #e44d26;
+    span {
+      animation-delay: 4s;
+    }
+  }
+  p:nth-of-type(2) {
+    color: #0170ba;
+    span {
+      animation-delay: 0s;
+    }
+  }
+  p:nth-of-type(3) {
+    color: #f0db4f;
+    span {
+      animation-delay: 2s;
+    }
+  }
+  p:nth-of-type(4) {
+    color: #53d2fa;
+    span {
+      animation-delay: 5s;
+    }
+  }
+  p:nth-of-type(5) {
+    color: #cd679a;
+    span {
+      animation-delay: 6s;
+    }
+  }
+  p:nth-of-type(6) {
+    color: #f05133;
+    span {
+      animation-delay: 3s;
+    }
+  }
+  p:nth-of-type(7) {
+    color: #fbde34;
+    span {
+      animation-delay: 7s;
+    }
+  }
+  p:nth-of-type(8) {
+    color: #7044a5;
+    span {
+      animation-delay: 1s;
+    }
+  }
+  p:nth-of-type(9) {
+    color: #cb3837;
+    span {
+      animation-delay: 5s;
+    }
+  }
+  p:nth-of-type(10) {
+    color: #75afcc;
+    span {
+      animation-delay: 4s;
+    }
+  }
+}
+
+@keyframes falling {
+  from {
+    top: -15%;
+  }
+  to {
+    top: 105%;
+  }
+}
