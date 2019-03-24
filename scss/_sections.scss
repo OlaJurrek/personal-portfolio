@@ -46,10 +46,16 @@ section {
   padding: 70px 20px;
 }
 
-// About | Projects - Vertical heading / box 2fr / box 3fr
+// About - Vertical heading / box 2fr / box 3fr
 .row-h-2-3 {
   @extend %row;
   grid-template-columns: 100px 2fr 3fr;
+}
+
+// Projects & Contact sections - Vertical heading / 1 box
+.row-h-1 {
+  @extend %row;
+  grid-template-columns: 100px auto;
 }
 
 // Single project: details / image
@@ -69,13 +75,6 @@ section {
   @extend %row;
   grid-template-columns: 100px auto auto;
   grid-gap: 4rem;
-}
-
-// Contact section - Vertical heading / 1 box
-.row-h-1 {
-  @extend %row;
-  grid-template-columns: 100px auto;
-  padding: 50px 20px;
 }
 
 // Round image wrapper

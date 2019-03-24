@@ -46,6 +46,7 @@ a {
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 95%;
+  color: #405f94;
   transition: all 0.25s ease-in; }
   .internal:hover {
     background-size: 100% 88%;
@@ -268,13 +269,16 @@ section p {
     writing-mode: vertical-rl;
     letter-spacing: 2px; }
 
-.row-h-2-3, .row-2-3, .row-3-2, .row-h-1-1, .row-h-1 {
+.row-h-2-3, .row-h-1, .row-2-3, .row-3-2, .row-h-1-1 {
   display: grid;
   grid-gap: 3rem;
   padding: 70px 20px; }
 
 .row-h-2-3 {
   grid-template-columns: 100px 2fr 3fr; }
+
+.row-h-1 {
+  grid-template-columns: 100px auto; }
 
 .row-2-3 {
   grid-template-columns: 2fr 3fr; }
@@ -285,10 +289,6 @@ section p {
 .row-h-1-1 {
   grid-template-columns: 100px auto auto;
   grid-gap: 4rem; }
-
-.row-h-1 {
-  grid-template-columns: 100px auto;
-  padding: 50px 20px; }
 
 .round-wrapper {
   height: 320px;
