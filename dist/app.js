@@ -37,3 +37,7 @@ function changeHeader() {
     document.body.classList.remove("changed-header");
   }
 }
+
+// Initialize Smooth Scroll
+
+const scroll = new SmoothScroll('a[href*="#"]', { speed: 500 });

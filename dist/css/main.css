@@ -42,8 +42,6 @@ a {
   color: inherit; }
 
 .internal {
-  position: relative;
-  z-index: 4;
   background-image: linear-gradient(to right, #405f94, #4568dc 80%);
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
