@@ -135,5 +135,6 @@ nav {
 
 // Cursor for auto typing
 .txt-type > .txt {
-  border-right: 0.2rem solid #777;
+  padding-right: 5px;
+  border-right: 0.15rem solid $decorative-color;
 }

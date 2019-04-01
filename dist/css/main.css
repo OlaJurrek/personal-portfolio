@@ -165,7 +165,8 @@ nav {
       color: #293d5f; }
 
 .txt-type > .txt {
-  border-right: 0.2rem solid #777; }
+  padding-right: 5px;
+  border-right: 0.15rem solid #405f94; }
 
 .btn {
   position: relative;
