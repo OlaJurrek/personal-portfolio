@@ -29,18 +29,6 @@
   }
 }
 
-.img-right {
-  display: grid;
-  grid-template-columns: 100px 3fr 2fr;
-  grid-gap: 3rem;
-}
-
-.img-left {
-  display: grid;
-  grid-template-columns: 100px 2fr 3fr;
-  grid-gap: 3rem;
-}
-
 .project-details {
   display: flex;
   flex-direction: column;

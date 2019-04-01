@@ -107,31 +107,6 @@ nav {
   }
 }
 
-// Headings
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Poppins", sans-serif;
-  color: $primary-color;
-}
-
-h1 {
-  font-size: 3rem;
-  color: $decorative-color;
-  letter-spacing: 3px;
-}
-
-h2 {
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-  font-weight: 300;
-  span {
-    font-weight: 600;
-    color: darken($decorative-color, 15%);
-  }
-}
-
 #home {
   height: 100vh;
   background: url(../images/bg.jpg) no-repeat;
@@ -156,4 +131,9 @@ h2 {
       color: darken($decorative-color, 15%);
     }
   }
+}
+
+// Cursor for auto typing
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
 }

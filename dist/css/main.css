@@ -143,26 +143,6 @@ nav {
     .menu-list .menu-item a {
       display: block; }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Poppins", sans-serif;
-  color: #292929; }
-
-h1 {
-  font-size: 3rem;
-  color: #405f94;
-  letter-spacing: 3px; }
-
-h2 {
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-  font-weight: 300; }
-  h2 span {
-    font-weight: 600;
-    color: #293d5f; }
-
 #home {
   height: 100vh;
   background: url(../images/bg.jpg) no-repeat;
@@ -183,6 +163,9 @@ h2 {
     #home .intro span {
       font-weight: 600;
       color: #293d5f; }
+
+.txt-type > .txt {
+  border-right: 0.2rem solid #777; }
 
 .btn {
   position: relative;
@@ -320,16 +303,6 @@ section p {
     transition: all 0.3s ease-in-out; }
   .project .image-wrapper:hover img {
     opacity: 0.8; }
-
-.img-right {
-  display: grid;
-  grid-template-columns: 100px 3fr 2fr;
-  grid-gap: 3rem; }
-
-.img-left {
-  display: grid;
-  grid-template-columns: 100px 2fr 3fr;
-  grid-gap: 3rem; }
 
 .project-details {
   display: flex;
