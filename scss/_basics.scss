@@ -44,6 +44,7 @@ h4 {
   color: $decorative-color;
   letter-spacing: 1px;
   text-transform: uppercase;
+  text-align: center;
 }
 
 // Links
@@ -73,6 +74,7 @@ a {
 .container {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 15px;
   font-family: "Open Sans", sans-serif;
   color: $text-color;
 }

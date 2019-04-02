@@ -35,7 +35,8 @@ h4 {
   font-size: 1.3rem;
   color: #405f94;
   letter-spacing: 1px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: center; }
 
 a {
   text-decoration: none;
@@ -55,6 +56,7 @@ a {
 .container {
   max-width: 1300px;
   margin: 0 auto;
+  padding: 0 15px;
   font-family: "Open Sans", sans-serif;
   color: #636363; }
 
@@ -62,7 +64,7 @@ header {
   position: fixed;
   left: 0;
   right: 0;
-  padding: 0.8rem 0;
+  padding: 0.8rem;
   z-index: 3; }
   header .container {
     display: flex;
@@ -151,15 +153,6 @@ nav {
     position: relative;
     padding-top: 40vh;
     z-index: 1; }
-    #home .intro::after {
-      content: "";
-      border: 3px solid #5377b4;
-      height: 210px;
-      width: 190px;
-      position: absolute;
-      top: 36vh;
-      left: -30px;
-      z-index: -1; }
     #home .intro span {
       font-weight: 600;
       color: #293d5f; }
@@ -314,7 +307,7 @@ section p {
   display: flex;
   margin: auto;
   width: 500px;
-  height: 80%;
+  height: 400px;
   padding: 10px;
   padding-left: 20px;
   padding-right: 40px;
@@ -411,3 +404,50 @@ footer {
 footer.container {
   font-size: 0.75rem;
   letter-spacing: 1px; }
+
+@media (max-width: 1350px) {
+  .container {
+    max-width: 1024px; } }
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 860px; } }
+
+@media (max-width: 720px) {
+  .container {
+    max-width: 700px; }
+  .row-h-2-3,
+  .row-h-1,
+  .row-2-3,
+  .row-3-2,
+  .row-h-1-1 {
+    grid-template-columns: 1fr;
+    grid-gap: 1.5rem;
+    padding: 20px; }
+  .section-heading {
+    display: flex;
+    align-items: center; }
+    .section-heading span:nth-child(2) {
+      display: none; }
+    .section-heading .title {
+      flex: 1;
+      writing-mode: initial;
+      text-align: center;
+      height: 100%; } }
+
+@media (max-width: 550px) {
+  html {
+    font-size: 14px; }
+  .round-wrapper {
+    width: 280px;
+    height: 280px; }
+  .image-wrapper {
+    max-width: 80%;
+    margin: auto; }
+  .skills-rain {
+    width: 300px;
+    height: 300px; } }
+
+@media (max-width: 350px) {
+  .logo span {
+    display: none; } }

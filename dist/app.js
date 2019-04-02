@@ -1,5 +1,5 @@
 // Auto type heading
-const TypeWriter = function(txtElement, words, wait = 3000) {
+const TypeWriter = function(txtElement, words, wait = 2000) {
   this.txtElement = txtElement;
   this.words = words;
   this.txt = "";
@@ -28,7 +28,7 @@ TypeWriter.prototype.type = function() {
   this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
 
   // Initial time speed
-  let typeSpeed = 300;
+  let typeSpeed = 200;
 
   if (this.isDeleting) {
     typeSpeed /= 2;
