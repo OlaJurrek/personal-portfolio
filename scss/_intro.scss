@@ -78,6 +78,9 @@ nav {
 .menu-list {
   position: absolute;
   top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background: $decorative-color;
   padding: 1rem 1.5rem;
   width: 180px;
@@ -115,16 +118,6 @@ nav {
     position: relative;
     padding-top: 40vh;
     z-index: 1;
-    // &::after { // is it really cool?
-    //   content: "";
-    //   border: 3px solid lighten($decorative-color, 10%);
-    //   height: 210px;
-    //   width: 190px;
-    //   position: absolute;
-    //   top: 36vh;
-    //   left: -30px;
-    //   z-index: -1;
-    // }
     span {
       font-weight: 600;
       color: darken($decorative-color, 15%);

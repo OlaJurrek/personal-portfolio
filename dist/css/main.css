@@ -121,6 +121,9 @@ nav {
 .menu-list {
   position: absolute;
   top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background: #405f94;
   padding: 1rem 1.5rem;
   width: 180px;
@@ -438,6 +441,12 @@ footer.container {
 @media (max-width: 550px) {
   html {
     font-size: 14px; }
+  .menu-list {
+    width: 85vw;
+    height: 55vh; }
+    .menu-list a {
+      text-align: center;
+      font-size: 1.2rem; }
   .round-wrapper {
     width: 280px;
     height: 280px; }
