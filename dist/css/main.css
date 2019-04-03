@@ -59,6 +59,20 @@ a {
   font-family: "Open Sans", sans-serif;
   color: #636363; }
 
+#loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #e6e6e6;
+  z-index: 100; }
+  #loading i {
+    position: fixed;
+    top: calc(50vh - 2rem);
+    left: calc(50vw - 2rem);
+    color: #405f94;
+    font-size: 4rem;
+    z-index: 101; }
+
 header {
   position: fixed;
   left: 0;

@@ -1,3 +1,24 @@
+// Loading spiner
+#loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  // top: calc(50vh - 2rem);
+  // left: calc(50vw - 2rem);
+  // color: $decorative-color;
+  // font-size: 4rem;
+  // background-color: rgba($primary-color);
+  background: $light;
+  z-index: 100;
+  i {
+    position: fixed;
+    top: calc(50vh - 2rem);
+    left: calc(50vw - 2rem);
+    color: $decorative-color;
+    font-size: 4rem;
+    z-index: 101;
+  }
+}
 // Header - main styles
 header {
   position: fixed;

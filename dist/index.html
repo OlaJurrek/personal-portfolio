@@ -22,10 +22,17 @@
       href="https://fonts.googleapis.com/css?family=Abril+Fatface"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="shortcut icon" href="favorite-4-24.ico" type="image/x-icon" />
   </head>
   <body>
+    <div id="loading"><i class="fas fa-cog fa-spin"></i></div>
     <header>
       <div class="container">
         <div class="logo">
@@ -66,7 +73,7 @@
       </div>
     </section>
     <section id="about">
-      <div class="container row-h-2-3">
+      <article class="container row-h-2-3">
         <h3 class="section-heading">
           <span class="digits">01</span><span></span
           ><span class="title">About Me</span>
@@ -98,13 +105,12 @@
             Currently I am looking for a job as Junior Front End Developer.
           </p>
         </div>
-      </div>
+      </article>
     </section>
     <section id="projects">
       <div class="container">
-        <!-- <div> -->
         <!-- Minimal design  -->
-        <div class="project row-2-3">
+        <article class="project row-2-3">
           <h3 class="section-heading">
             <span class="digits">02</span><span></span
             ><span class="title">Projects</span>
@@ -140,7 +146,7 @@
               ><picture>
                 <source
                   media="(max-width: 550px)"
-                  srcset="images/minimal-mobile.png"
+                  srcset="images/minimal-mobile2.png"
                 />
                 <img
                   src="images/minimal.png"
@@ -149,9 +155,9 @@
               </picture>
             </a>
           </div>
-        </div>
+        </article>
         <!-- JS Clocks -->
-        <div class="project row-3-2">
+        <article class="project row-3-2">
           <div class="image-wrapper">
             <a
               target="_blank"
@@ -191,9 +197,9 @@
               ><span>View the code /</span></a
             >
           </div>
-        </div>
+        </article>
         <!-- To Do List -->
-        <div class="project row-2-3">
+        <article class="project row-2-3">
           <div class="project-details">
             <h4>Classic To Do List</h4>
             <p>
@@ -229,9 +235,9 @@
               </picture>
             </a>
           </div>
-        </div>
+        </article>
         <!-- Currency converter -->
-        <div class="project row-3-2">
+        <article class="project row-3-2">
           <div class="image-wrapper">
             <a target="_blank" rel="noopener noreferrer" href="#">
               <picture>
@@ -269,18 +275,17 @@
               ><span>View the code /</span></a
             >
           </div>
-        </div>
-        <!-- </div> -->
+        </article>
       </div>
     </section>
     <!-- Skills section -->
     <section id="skills">
-      <div class="container row-h-1-1">
+      <article class="container row-h-1-1">
         <h3 class="section-heading">
           <span class="digits">03</span><span></span
           ><span class="title">Skills</span>
         </h3>
-        <article>
+        <div>
           <h4>What Can I Do?</h4>
           <p>
             I do not know how to estimate my skills in percentages. Especially
@@ -301,7 +306,7 @@
             <a href="#projects" class="internal">projects section</a> to see
             some of the results.
           </p>
-        </article>
+        </div>
         <div class="skills-rain">
           <p><span>HTML5</span></p>
           <p><span>CSS3</span></p>
@@ -314,7 +319,7 @@
           <p><span>npm</span></p>
           <p><span>Webpack</span></p>
         </div>
-      </div>
+      </article>
     </section>
     <!-- Contact section -->
     <section id="contact">

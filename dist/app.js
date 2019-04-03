@@ -1,3 +1,11 @@
+// Loading spinner
+document.onreadystatechange = function() {
+  let state = document.readyState;
+  if (state == "complete") {
+    document.getElementById("loading").style.visibility = "hidden";
+  }
+};
+
 // Auto type heading
 const TypeWriter = function(txtElement, words, wait = 2000) {
   this.txtElement = txtElement;
