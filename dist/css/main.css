@@ -300,7 +300,8 @@ section p {
   grid-area: details;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  min-height: 500px; }
 
 .project .image-wrapper {
   grid-area: image;
@@ -383,11 +384,11 @@ section p {
     top: 105%; } }
 
 .contact-details {
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
-  text-align: center;
+  justify-content: space-evenly;
   justify-content: space-evenly;
   color: #292929;
   text-transform: uppercase;
@@ -432,9 +433,9 @@ footer.container {
     padding: 20px; }
   .row-2-3,
   .row-3-2 {
-    grid-template-areas: "details" "image"; }
+    grid-template-areas: "details" "image"; }
   .row-2-3:first-of-type {
-    grid-template-areas: "heading" "details" "image"; }
+    grid-template-areas: "heading" "details" "image"; }
   .section-heading {
     display: flex;
     align-items: center; }
@@ -468,6 +469,11 @@ footer.container {
   .skills-rain {
     width: 300px;
     height: 300px; }
+  .contact-details h2 {
+    font-size: 1.5rem; }
+  .contact-details p {
+    padding: 1.5rem;
+    font-size: 1.2rem; }
   footer {
     padding: 20px 0; }
     footer span {
