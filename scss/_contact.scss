@@ -1,12 +1,10 @@
 // Contact
 .contact-details {
-  min-height: 400px;
+  // min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-
-  justify-content: space-evenly;
+  justify-content: space-around;
   color: $primary-color;
   text-transform: uppercase;
   letter-spacing: 1px;
