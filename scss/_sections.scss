@@ -1,5 +1,4 @@
 section {
-  // min-height: 500px;
   &:nth-of-type(even) {
     background-color: $light;
   }
@@ -15,13 +14,13 @@ section {
 
 // Section heading
 .section-heading {
-  // grid-area: heading;
   padding: 0.5rem 2rem;
+
   font-size: 2rem;
   line-height: 1.2;
   .digits {
     font-size: 3rem;
-    font-weight: 600;
+    font-family: "Abril Fatface", cursive;
     color: $decorative-color;
   }
   span:nth-child(2) {
@@ -34,6 +33,7 @@ section {
   .title {
     height: 200px;
     text-transform: uppercase;
+    color: $primary-color;
     font-weight: 500;
     writing-mode: vertical-rl;
     letter-spacing: 2px;

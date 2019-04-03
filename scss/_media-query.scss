@@ -42,12 +42,18 @@
   .section-heading {
     display: flex;
     align-items: center;
-
+    justify-content: center;
+    min-height: 100px;
+    // .digits {
+    //   padding-right: 1rem;
+    // }
     span:nth-child(2) {
       display: none;
     }
     .title {
-      flex: 1;
+      margin-left: 1.3rem;
+      padding-bottom: 3px;
+      border-bottom: 2px solid $text-color;
       writing-mode: initial;
       text-align: center;
       height: 100%;

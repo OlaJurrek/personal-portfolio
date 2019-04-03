@@ -32,10 +32,9 @@ h2 {
 
 h4 {
   margin-bottom: 1rem;
-  font-size: 1.3rem;
-  color: #405f94;
+  font-size: 1.4rem;
+  color: #314870;
   letter-spacing: 1px;
-  text-transform: uppercase;
   text-align: center; }
 
 a {
@@ -234,7 +233,7 @@ section p {
   line-height: 1.2; }
   .section-heading .digits {
     font-size: 3rem;
-    font-weight: 600;
+    font-family: "Abril Fatface", cursive;
     color: #405f94; }
   .section-heading span:nth-child(2) {
     display: block;
@@ -245,6 +244,7 @@ section p {
   .section-heading .title {
     height: 200px;
     text-transform: uppercase;
+    color: #292929;
     font-weight: 500;
     writing-mode: vertical-rl;
     letter-spacing: 2px; }
@@ -438,11 +438,15 @@ footer.container {
     grid-template-areas: "heading" "details" "image"; }
   .section-heading {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; }
     .section-heading span:nth-child(2) {
       display: none; }
     .section-heading .title {
-      flex: 1;
+      margin-left: 1.3rem;
+      padding-bottom: 3px;
+      border-bottom: 2px solid #636363;
       writing-mode: initial;
       text-align: center;
       height: 100%; } }

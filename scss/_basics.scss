@@ -40,10 +40,10 @@ h2 {
 
 h4 {
   margin-bottom: 1rem;
-  font-size: 1.3rem;
-  color: $decorative-color;
+  font-size: 1.4rem;
+  color: darken($decorative-color, 10%);
   letter-spacing: 1px;
-  text-transform: uppercase;
+  // text-transform: uppercase;
   text-align: center;
 }
 
