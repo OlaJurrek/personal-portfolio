@@ -292,6 +292,11 @@ section p {
 .project:nth-of-type(4) .image-wrapper {
   background: url(../images/conventer-code.png); }
 
+.project .project-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .project .image-wrapper {
   background-repeat: no-repeat; }
   .project .image-wrapper a {
@@ -300,11 +305,6 @@ section p {
     transition: all 0.3s ease-in-out; }
   .project .image-wrapper:hover img {
     opacity: 0.8; }
-
-.project-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
 
 .skills-rain {
   display: flex;
@@ -402,7 +402,8 @@ section p {
 footer {
   padding: 30px 0;
   background: #292929;
-  color: #e6e6e6; }
+  color: #e6e6e6;
+  text-align: center; }
 
 footer.container {
   font-size: 0.75rem;
@@ -412,13 +413,9 @@ footer.container {
   .container {
     max-width: 1024px; } }
 
-@media (max-width: 1024px) {
+@media (max-width: 960px) {
   .container {
-    max-width: 860px; } }
-
-@media (max-width: 720px) {
-  .container {
-    max-width: 700px; }
+    max-width: 900px; }
   .row-h-2-3,
   .row-h-1,
   .row-2-3,
@@ -438,6 +435,10 @@ footer.container {
       text-align: center;
       height: 100%; } }
 
+@media (max-width: 720px) {
+  .container {
+    max-width: 700px; } }
+
 @media (max-width: 550px) {
   html {
     font-size: 14px; }
@@ -455,14 +456,13 @@ footer.container {
     margin: auto; }
   .skills-rain {
     width: 300px;
-    height: 300px; } }
-
-@media (max-width: 350px) {
-  .logo span {
-    display: none; }
+    height: 300px; }
   footer {
-    padding: 20px 0;
-    text-align: center; }
+    padding: 20px 0; }
     footer span {
       display: block;
       margin-top: 5px; } }
+
+@media (max-width: 350px) {
+  .logo span {
+    display: none; } }
