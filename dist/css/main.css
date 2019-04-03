@@ -459,4 +459,10 @@ footer.container {
 
 @media (max-width: 350px) {
   .logo span {
-    display: none; } }
+    display: none; }
+  footer {
+    padding: 20px 0;
+    text-align: center; }
+    footer span {
+      display: block;
+      margin-top: 5px; } }
