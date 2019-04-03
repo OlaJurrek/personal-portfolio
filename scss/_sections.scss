@@ -14,9 +14,9 @@ section {
 
 // Section heading
 .section-heading {
+  // grid-area: heading;
   padding: 0.5rem 2rem;
   font-size: 2rem;
-
   line-height: 1.2;
   .digits {
     font-size: 3rem;
@@ -52,22 +52,21 @@ section {
   grid-template-columns: 100px 2fr 3fr;
 }
 
-// Projects & Contact sections - Vertical heading / 1 box
-.row-h-1 {
-  @extend %row;
-  grid-template-columns: 100px auto;
-}
-
 // Single project: details / image
 .row-2-3 {
   @extend %row;
-  grid-template-columns: 2fr 3fr;
+  grid-template-areas: " . details image";
+  grid-template-columns: 100px 2fr 3fr;
+  &:first-of-type {
+    grid-template-areas: " heading details image";
+  }
 }
 
 // Single project: image / details
 .row-3-2 {
   @extend %row;
-  grid-template-columns: 3fr 2fr;
+  grid-template-areas: " . image details";
+  grid-template-columns: 100px 3fr 2fr;
 }
 
 // Skills section - Vertical heading / 2 equal boxes
@@ -75,6 +74,13 @@ section {
   @extend %row;
   grid-template-columns: 100px auto auto;
   grid-gap: 4rem;
+}
+
+// Projects & Contact sections - Vertical heading / 1 box
+// OBS!! Only contact in this branch!
+.row-h-1 {
+  @extend %row;
+  grid-template-columns: 100px auto;
 }
 
 // Round image wrapper

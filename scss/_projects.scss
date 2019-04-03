@@ -17,12 +17,14 @@
   }
   // Project description
   .project-details {
+    grid-area: details;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   // Project View
   .image-wrapper {
+    grid-area: image;
     background-repeat: no-repeat;
     a {
       background-color: $very-light;

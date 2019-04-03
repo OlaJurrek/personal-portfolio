@@ -249,7 +249,7 @@ section p {
     writing-mode: vertical-rl;
     letter-spacing: 2px; }
 
-.row-h-2-3, .row-h-1, .row-2-3, .row-3-2, .row-h-1-1 {
+.row-h-2-3, .row-2-3, .row-3-2, .row-h-1-1, .row-h-1 {
   display: grid;
   grid-gap: 3rem;
   padding: 70px 20px; }
@@ -257,18 +257,22 @@ section p {
 .row-h-2-3 {
   grid-template-columns: 100px 2fr 3fr; }
 
-.row-h-1 {
-  grid-template-columns: 100px auto; }
-
 .row-2-3 {
-  grid-template-columns: 2fr 3fr; }
+  grid-template-areas: " . details image";
+  grid-template-columns: 100px 2fr 3fr; }
+  .row-2-3:first-of-type {
+    grid-template-areas: " heading details image"; }
 
 .row-3-2 {
-  grid-template-columns: 3fr 2fr; }
+  grid-template-areas: " . image details";
+  grid-template-columns: 100px 3fr 2fr; }
 
 .row-h-1-1 {
   grid-template-columns: 100px auto auto;
   grid-gap: 4rem; }
+
+.row-h-1 {
+  grid-template-columns: 100px auto; }
 
 .round-wrapper {
   height: 320px;
@@ -293,11 +297,13 @@ section p {
   background: url(../images/conventer-code.png); }
 
 .project .project-details {
+  grid-area: details;
   display: flex;
   flex-direction: column;
   align-items: center; }
 
 .project .image-wrapper {
+  grid-area: image;
   background-repeat: no-repeat; }
   .project .image-wrapper a {
     background-color: #fefefe; }
@@ -424,6 +430,11 @@ footer.container {
     grid-template-columns: 1fr;
     grid-gap: 1.5rem;
     padding: 20px; }
+  .row-2-3,
+  .row-3-2 {
+    grid-template-areas: "details" "image"; }
+  .row-2-3:first-of-type {
+    grid-template-areas: "heading" "details" "image"; }
   .section-heading {
     display: flex;
     align-items: center; }

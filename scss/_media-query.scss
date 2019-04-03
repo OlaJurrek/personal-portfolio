@@ -25,6 +25,20 @@
     padding: 20px;
   }
 
+  .row-2-3,
+  .row-3-2 {
+    grid-template-areas:
+      "details"
+      "image";
+  }
+
+  .row-2-3:first-of-type {
+    grid-template-areas:
+      "heading"
+      "details"
+      "image";
+  }
+
   .section-heading {
     display: flex;
     align-items: center;
