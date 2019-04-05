@@ -1,0 +1,47 @@
+// Fonts variables
+$text-font: "Open Sans", sans-serif;
+$heading-font: "Poppins", sans-serif;
+$logo-font: "Poiret One", cursive;
+$digits-font: "Abril Fatface", cursive;
+
+// Basic Font Styles
+* {
+  font-size: 100%;
+}
+
+html {
+  font-size: 16px;
+  color: $primary-dark;
+}
+
+// Headings (excludig h3 used as section header - see _sections)
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: $secondary-dark;
+  letter-spacing: 3px;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  span {
+    font-weight: 600;
+    color: darken($secondary-dark, 15%);
+  }
+}
+
+h4 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  color: darken($secondary-dark, 10%);
+  letter-spacing: 1px;
+  text-align: center;
+}

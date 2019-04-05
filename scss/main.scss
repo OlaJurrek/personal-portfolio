@@ -1,10 +1,21 @@
-@import "helpers.scss";
-@import "basics.scss";
-@import "intro";
-@import "buttons";
-@import "sections";
-@import "projects";
-@import "skills";
-@import "contact";
-@import "footer";
+// ------ Base ----- //
+
+@import "base/variables";
+@import "base/typography";
+
+// Where to put the two below??????
+@import "basics";
 @import "media-query";
+
+// ------ Components ------ //
+
+@import "components/buttons";
+
+// ---- Layout ------ //
+
+@import "layout/grid";
+@import "layout/intro";
+@import "layout/projects";
+@import "layout/skills";
+@import "layout/contact";
+@import "layout/footer";

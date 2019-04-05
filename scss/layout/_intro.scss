@@ -3,22 +3,18 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  // top: calc(50vh - 2rem);
-  // left: calc(50vw - 2rem);
-  // color: $decorative-color;
-  // font-size: 4rem;
-  // background-color: rgba($primary-color);
-  background: $light;
+  background: $primary-light;
   z-index: 100;
   i {
     position: fixed;
     top: calc(50vh - 2rem);
     left: calc(50vw - 2rem);
-    color: $decorative-color;
+    color: $secondary-dark;
     font-size: 4rem;
     z-index: 101;
   }
 }
+
 // Header - main styles
 header {
   position: fixed;
@@ -37,7 +33,7 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  color: $decorative-color;
+  color: $secondary-dark;
   font-family: "Poiret One", cursive;
   font-size: 1.3rem;
   img {
@@ -53,8 +49,8 @@ header {
 // Header and logo below home section
 .changed-header {
   header {
-    background-color: rgba($light, 0.8);
-    box-shadow: 0 0 3px 2px rgba($light, 0.8);
+    background-color: rgba($primary-light, 0.8);
+    box-shadow: 0 0 3px 2px rgba($primary-light, 0.8);
   }
   .logo {
     span {
@@ -76,14 +72,13 @@ nav {
   position: relative;
   background: transparent;
   padding-bottom: 20px;
-  color: $primary-color;
   .line {
     position: absolute;
     top: 22px;
     width: 70%;
     height: 2.5px;
     margin-top: 5px;
-    background: $primary-color;
+    background: $primary-dark;
     border-radius: 5px;
     transition: 0.5s ease all 0.3s;
   }
@@ -102,7 +97,7 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  background: $decorative-color;
+  background: $secondary-dark;
   padding: 1rem 1.5rem;
   width: 180px;
   opacity: 0;
@@ -119,11 +114,11 @@ nav {
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: $light;
+    color: $primary-light;
     cursor: pointer;
     transition: all 0.3s ease-out;
     &:hover {
-      color: $primary-color;
+      color: $primary-dark;
     }
     a {
       display: block;
@@ -141,7 +136,7 @@ nav {
     z-index: 1;
     span {
       font-weight: 600;
-      color: darken($decorative-color, 15%);
+      color: darken($secondary-dark, 15%);
     }
   }
 }
@@ -149,5 +144,5 @@ nav {
 // Cursor for auto typing
 .txt-type > .txt {
   padding-right: 5px;
-  border-right: 0.15rem solid $decorative-color;
+  border-right: 0.15rem solid $secondary-dark;
 }

@@ -3,47 +3,9 @@
   margin: 0;
   padding: 0;
   border: 0;
-  // outline: 0;
-  font-size: 100%;
   vertical-align: baseline;
   background: transparent;
   box-sizing: border-box;
-}
-
-body {
-  color: $primary-color;
-}
-
-// Headings (excludig h3 used as section header - see _sections)
-h1,
-h2,
-h3,
-h4 {
-  font-family: "Poppins", sans-serif;
-}
-
-h1 {
-  font-size: 3rem;
-  color: $decorative-color;
-  letter-spacing: 3px;
-}
-
-h2 {
-  font-size: 1.6rem;
-  font-weight: 300;
-  letter-spacing: 1px;
-  span {
-    font-weight: 600;
-    color: darken($decorative-color, 15%);
-  }
-}
-
-h4 {
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-  color: darken($decorative-color, 10%);
-  letter-spacing: 1px;
-  text-align: center;
 }
 
 // Links
@@ -52,20 +14,20 @@ a {
   color: inherit;
 }
 
-.internal {
+.internal-link {
   background-image: linear-gradient(
     to right,
-    $decorative-color,
-    $link-color 80%
+    $secondary-dark,
+    $secondary-light 80%
   );
   background-repeat: no-repeat;
   background-size: 100% 0.2em;
   background-position: 0 95%;
-  color: $decorative-color;
+  color: $secondary-dark;
   transition: all 0.25s ease-in;
   &:hover {
     background-size: 100% 88%;
-    color: $very-light;
+    color: $primary-very-light;
   }
 }
 
@@ -75,5 +37,4 @@ a {
   margin: 0 auto;
   padding: 0 30px;
   font-family: "Open Sans", sans-serif;
-  color: $text-color;
 }
