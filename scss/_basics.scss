@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
+  // outline: 0;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
@@ -43,7 +43,6 @@ h4 {
   font-size: 1.4rem;
   color: darken($decorative-color, 10%);
   letter-spacing: 1px;
-  // text-transform: uppercase;
   text-align: center;
 }
 

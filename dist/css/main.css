@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   border: 0;
-  outline: 0;
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
@@ -473,6 +472,11 @@ footer.container {
       writing-mode: initial;
       text-align: center;
       height: auto; } }
+
+@media (max-width: 740px) {
+  .image-wrapper {
+    max-width: 70%;
+    margin: auto; } }
 
 @media (max-width: 550px) {
   html {

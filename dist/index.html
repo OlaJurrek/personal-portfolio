@@ -36,18 +36,17 @@
     <header>
       <div class="container">
         <div class="logo">
-          <img src="images/circle-outline-48.png" /><span
-            >Aleksandra Jurek</span
-          >
+          <a href="#home"><img src="images/circle-outline-48.png"/></a>
+          <span>Aleksandra Jurek</span>
         </div>
         <nav>
-          <div class="menu-icon">
+          <div tabindex="0" class="menu-icon">
             <p>MENU</p>
             <p class="line"></p>
             <p class="line"></p>
           </div>
           <ul class="menu-list">
-            <li class="menu-item"><a href="#">Home</a></li>
+            <li class="menu-item"><a href="#home">Home</a></li>
             <li class="menu-item"><a href="#about">About</a></li>
             <li class="menu-item"><a href="#projects">Projects</a></li>
             <li class="menu-item"><a href="#skills">Skills</a></li>
@@ -143,9 +142,10 @@
               target="_blank"
               rel="noopener noreferrer"
               href="https://olajurrek.github.io/minimal-design/"
+              tabindex="-1"
               ><picture>
                 <source
-                  media="(max-width: 550px)"
+                  media="(max-width: 740px)"
                   srcset="images/minimal-mobile2.png"
                 />
                 <img
@@ -163,6 +163,7 @@
               target="_blank"
               rel="noopener noreferrer"
               href="https://olajurrek.github.io/clocks/"
+              tabindex="-1"
             >
               <picture>
                 <source
@@ -225,10 +226,11 @@
               target="_blank"
               rel="noopener noreferrer"
               href="https://olajurrek.github.io/todo-toshow/"
+              tabindex="-1"
             >
               <picture>
                 <source
-                  media="(max-width: 550px)"
+                  media="(max-width: 740px)"
                   srcset="images/todo-mobile.png"
                 />
                 <img src="images/todo.png" alt="View of ToDo App" />
@@ -239,7 +241,7 @@
         <!-- Currency converter -->
         <article class="project row-3-2">
           <div class="image-wrapper">
-            <a target="_blank" rel="noopener noreferrer" href="#">
+            <a target="_blank" rel="noopener noreferrer" href="#" tabindex="-1">
               <picture>
                 <source
                   media="(max-width: 550px)"
