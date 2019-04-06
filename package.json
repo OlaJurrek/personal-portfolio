@@ -1,8 +1,13 @@
 {
   "name": "personal_portfolio",
   "version": "1.0.0",
+  "private": true,
   "description": "My personal portfolio",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OlaJurrek/personal_portfolio.git"
+  },
   "scripts": {
     "sass": "node-sass -w scss/ -o dist/css/ --recursive --output-style compressed"
   },

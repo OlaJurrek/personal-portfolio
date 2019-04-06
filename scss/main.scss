@@ -5,10 +5,11 @@
 
 // Where to put the two below??????
 @import "basics";
-@import "media-query";
 
 // ------ Components ------ //
 
+@import "components/loader";
+@import "components/logo";
 @import "components/buttons";
 
 // ---- Layout ------ //
@@ -19,3 +20,5 @@
 @import "layout/skills";
 @import "layout/contact";
 @import "layout/footer";
+
+@import "media-query";

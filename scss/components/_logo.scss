@@ -1,0 +1,22 @@
+// Logo
+.logo {
+  display: flex;
+  align-items: center;
+  font: 1.3rem $logo-font;
+  color: $secondary-dark;
+  img {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  span {
+    padding-left: 1rem;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+// Logo style if scroll below home section - name disappears
+.changed-header .logo {
+  span {
+    opacity: 0;
+  }
+}

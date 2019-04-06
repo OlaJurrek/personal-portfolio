@@ -20,7 +20,7 @@ section {
   line-height: 1.2;
   .digits {
     font-size: 3rem;
-    font-family: "Abril Fatface", cursive;
+    font-family: $digits-font;
     color: $secondary-dark;
   }
   span:nth-child(2) {

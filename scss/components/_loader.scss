@@ -1,0 +1,28 @@
+// Loading spinner
+#loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: $primary-light;
+  z-index: 100;
+  i {
+    position: fixed;
+    font-size: 4rem;
+    z-index: 101;
+  }
+  i:first-of-type {
+    top: calc(50vh - 2rem);
+    left: calc(50vw - 2rem);
+    color: $secondary-dark;
+  }
+  i:nth-of-type(2) {
+    top: 40vh;
+    left: calc(50vw - 6rem);
+    color: $secondary-light;
+  }
+  i:last-of-type {
+    top: 35vh;
+    left: calc(50vw - 2rem);
+    color: darken($secondary-dark, 15%);
+  }
+}

@@ -15,11 +15,7 @@
       content="web development, front end development, UX, UI"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans|Poiret+One|Poppins:300,400,500, 600"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Abril+Fatface"
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Poiret+One|Poppins:300,500,600"
       rel="stylesheet"
     />
     <link
@@ -32,7 +28,10 @@
     <link rel="shortcut icon" href="favorite-4-24.ico" type="image/x-icon" />
   </head>
   <body>
-    <div id="loading"><i class="fas fa-cog fa-spin"></i></div>
+    <div id="loading">
+      <i class="fas fa-cog fa-spin"></i><i class="fas fa-cog fa-spin"></i
+      ><i class="fas fa-cog fa-spin"></i>
+    </div>
     <header>
       <div class="container">
         <div class="logo">
@@ -346,6 +345,9 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <!-- <script src="/node_modules/focus-visible/dist/focus-visible.min.js"></script> -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.js?features=Element.prototype.classList"></script>
+    <script src="https://unpkg.com/focus-visible"></script>
     <script src="app.js"></script>
   </body>
 </html>
