@@ -1,0 +1,15 @@
+// Home section
+#home {
+  height: 100vh;
+  background: no-repeat url(../images/bg.jpg);
+  background-size: cover;
+  .intro {
+    padding-top: 40vh;
+  }
+}
+
+// Cursor for auto typing
+.txt-type > .txt {
+  padding-right: 5px;
+  border-right: 0.15rem solid $secondary-dark;
+}

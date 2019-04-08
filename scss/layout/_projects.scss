@@ -2,6 +2,7 @@
   width: 100%;
 }
 
+// Code images below projects printscreens visible on hover
 .project {
   &:nth-of-type(1) .image-wrapper {
     background: url(../images/minimal-code.png);
@@ -21,7 +22,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // min-height: 500px;
   }
   // Project View
   .image-wrapper {

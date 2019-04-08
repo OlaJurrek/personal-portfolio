@@ -1,38 +1,16 @@
-// Header - main styles
-header {
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding: 0.8rem;
-  z-index: 3;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-}
-
-// Header if scroll below home section
-.changed-header {
-  header {
-    background-color: rgba($primary-light, 0.8);
-    box-shadow: 0 0 3px 2px rgba($primary-light, 0.8);
-  }
-}
-
-// Menu icon and navigation
+// General navigation layout
 nav {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  position: relative;
 }
 
+// Menu icon
 .menu-icon {
-  cursor: pointer;
   position: relative;
-  background: transparent;
   padding-bottom: 20px;
+  cursor: pointer;
   .line {
     position: absolute;
     top: 22px;
@@ -52,15 +30,16 @@ nav {
   }
 }
 
+// Dropdown Menu List
 .menu-list {
   position: absolute;
   top: 55px;
+  width: 180px;
+  padding: 1rem 1.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   background: $secondary-dark;
-  padding: 1rem 1.5rem;
-  width: 180px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease-out;
@@ -68,7 +47,7 @@ nav {
     visibility: visible;
     opacity: 1;
   }
-  .menu-item {
+  li {
     list-style: none;
     text-align: end;
     line-height: 2rem;
@@ -83,27 +62,7 @@ nav {
     }
     a {
       display: block;
+      padding-right: 5px;
     }
   }
-}
-
-#home {
-  height: 100vh;
-  background: url(../images/bg.jpg) no-repeat;
-  background-size: cover;
-  .intro {
-    position: relative;
-    padding-top: 40vh;
-    z-index: 1;
-    span {
-      font-weight: 600;
-      color: darken($secondary-dark, 15%);
-    }
-  }
-}
-
-// Cursor for auto typing
-.txt-type > .txt {
-  padding-right: 5px;
-  border-right: 0.15rem solid $secondary-dark;
 }

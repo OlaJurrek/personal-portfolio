@@ -1,24 +1,25 @@
 // ------ Base ----- //
 
 @import "base/variables";
+@import "base/reset";
 @import "base/typography";
-
-// Where to put the two below??????
-@import "basics";
 
 // ------ Components ------ //
 
 @import "components/loader";
 @import "components/logo";
 @import "components/buttons";
+@import "components/navigation";
 
 // ---- Layout ------ //
 
+@import "layout/header";
+@import "layout/home";
 @import "layout/grid";
-@import "layout/intro";
 @import "layout/projects";
 @import "layout/skills";
 @import "layout/contact";
 @import "layout/footer";
 
+// Where to put it??????
 @import "media-query";

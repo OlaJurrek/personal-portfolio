@@ -14,10 +14,12 @@
       name="keywords"
       content="web development, front end development, UX, UI"
     />
+    <!-- Fonts -->
     <link
       href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans|Poiret+One|Poppins:300,500,600"
       rel="stylesheet"
     />
+    <!-- Styles and Icons -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
@@ -28,10 +30,14 @@
     <link rel="shortcut icon" href="favorite-4-24.ico" type="image/x-icon" />
   </head>
   <body>
+    <!-- Loading spinner -->
     <div id="loading">
-      <i class="fas fa-cog fa-spin"></i><i class="fas fa-cog fa-spin"></i
-      ><i class="fas fa-cog fa-spin"></i>
+      <div>
+        <i class="fas fa-cog fa-spin"></i><i class="fas fa-cog fa-spin"></i
+        ><i class="fas fa-cog fa-spin"></i>
+      </div>
     </div>
+    <!-- Header and navigation -->
     <header>
       <div class="container">
         <div class="logo">
@@ -45,15 +51,16 @@
             <p class="line"></p>
           </div>
           <ul class="menu-list">
-            <li class="menu-item"><a href="#home">Home</a></li>
-            <li class="menu-item"><a href="#about">About</a></li>
-            <li class="menu-item"><a href="#projects">Projects</a></li>
-            <li class="menu-item"><a href="#skills">Skills</a></li>
-            <li class="menu-item"><a href="#contact">Contact</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
       </div>
     </header>
+    <!-- Home Section  -->
     <section id="home">
       <div class="container">
         <div class="intro">
@@ -116,22 +123,24 @@
           <div class="project-details">
             <h4>Minimal Portfolio</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
-              adipisci impedit aut reiciendis. Amet ipsa saepe earum corrupti
-              corporis, voluptates obcaecati explicabo commodi nisi facilis
-              autem aliquid quas iusto ipsum.
+              It is my first project which I am not (very) ashamed of showing to
+              others. It is built in HTML5, CSS and pure Javascript. After a few
+              months I have rewritten it a bit in a more semantic and accesible
+              way. I have also organized CSS files according to SMACCS
+              methodology then. This project really taught me what messy code
+              means and why maintenance is important.
             </p>
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://olajurrek.github.io/minimal-design/"
+              href="https://olajurrek.github.io/minimal-portfolio/index.html"
               class="btn demo"
               ><span>See this app</span></a
             >
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/OlaJurrek/minimal-design"
+              href="https://github.com/OlaJurrek/minimal-portfolio"
               class="btn code"
               ><span>View the code /</span></a
             >
@@ -140,12 +149,12 @@
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://olajurrek.github.io/minimal-design/"
+              href="https://olajurrek.github.io/minimal-portfolio/index.html"
               tabindex="-1"
               ><picture>
                 <source
                   media="(max-width: 740px)"
-                  srcset="images/minimal-mobile2.png"
+                  srcset="images/minimal-mobile.png"
                 />
                 <img
                   src="images/minimal.png"
@@ -330,7 +339,7 @@
           ><span class="title">Contact</span>
         </h3>
         <div class="contact-details">
-          <h2>Feel free to reach out</h2>
+          <h4>Feel free to reach out</h4>
           <p><span></span>+48 501 305 688</p>
           <a href="mailto:jurek.aleksandra@gmail.com" class="btn msg"
             ><span>Send message</span></a
