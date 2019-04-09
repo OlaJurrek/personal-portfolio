@@ -51,14 +51,14 @@ a {
 }
 
 // Internal Links
-.internal-link {
+.animated-link {
   background-image: linear-gradient(
     to right,
     $secondary-dark,
     $secondary-light 80%
   );
   background-repeat: no-repeat;
-  background-size: 100% 0.2em;
+  background-size: 100% 0.1em;
   background-position: 0 95%;
   color: $secondary-dark;
   transition: all 0.25s ease-in;

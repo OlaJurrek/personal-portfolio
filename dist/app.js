@@ -104,7 +104,6 @@ const bottomOfHome = home.offsetHeight;
 window.addEventListener("scroll", changeHeader);
 
 function changeHeader() {
-  console.log(bottomOfHome, window.scrollY);
   if (bottomOfHome <= window.scrollY) {
     document.body.classList.add("changed-header");
   } else {
