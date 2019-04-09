@@ -1,7 +1,7 @@
 // General button style
 .btn {
   position: relative;
-  width: 240px; // maybe it could be in percentages??
+  width: 240px;
   padding: 12px 0;
   border: 2px solid $primary-dark;
   color: $primary-dark;
@@ -32,8 +32,6 @@
 
 // Button linking to project
 .demo {
-  margin-top: auto;
-  margin-bottom: 2rem;
   &::before {
     content: url(../images/play-button.png);
   }

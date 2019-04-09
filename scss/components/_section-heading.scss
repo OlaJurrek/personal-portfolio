@@ -1,0 +1,25 @@
+// Section heading
+.section-heading {
+  font-size: 2rem;
+  line-height: 1.2;
+  .digits {
+    font-size: 3rem;
+    font-family: $digits-font;
+    color: $secondary-dark;
+  }
+  span:nth-child(2) {
+    display: block;
+    margin: 1rem auto;
+    height: 90px;
+    width: 3px;
+    background-color: $primary-mid;
+  }
+  .title {
+    height: 200px;
+    padding-left: 7px;
+    text-transform: uppercase;
+    font-weight: 500;
+    writing-mode: vertical-rl;
+    letter-spacing: 2px;
+  }
+}

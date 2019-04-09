@@ -1,11 +1,12 @@
 // Main container
 .container {
-  max-width: 1300px;
+  max-width: 1800px;
   margin: 0 auto;
-  padding: 0 30px;
 }
 
+// Basic section styles
 section {
+  padding: 0 70px;
   &:nth-of-type(even) {
     background-color: $primary-light;
   }
@@ -13,50 +14,23 @@ section {
     background-color: $primary-very-light;
   }
   p {
-    padding-top: 1rem;
-    line-height: 1.5;
+    line-height: 1.7;
     text-align: justify;
-  }
-}
-
-// Section heading
-.section-heading {
-  // min-height: 80px;
-  padding: 0.5rem 2rem;
-  font-size: 2rem;
-  line-height: 1.2;
-  .digits {
-    font-size: 3rem;
-    font-family: $digits-font;
-    color: $secondary-dark;
-  }
-  span:nth-child(2) {
-    display: block;
-    margin: 1rem auto;
-    height: 90px;
-    width: 3px;
-    background-color: $primary-mid;
-  }
-  .title {
-    height: 200px;
-    text-transform: uppercase;
-    font-weight: 500;
-    writing-mode: vertical-rl;
-    letter-spacing: 2px;
   }
 }
 
 // Sections layout
 %row {
   display: grid;
-  // justify-items: center;
-  // margin: auto;
   grid-gap: 2.5rem;
-  padding: 70px 20px;
-  grid-template-rows: minmax(445px, auto);
+  padding: 70px 0;
+  > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
-// About - Vertical heading / box 2fr / box 3fr
+// About section: vertical heading / box 2fr / box 3fr
 .row-h-2-3 {
   @extend %row;
   grid-template-columns: minmax(auto, 100px) 2fr 3fr;
@@ -79,14 +53,14 @@ section {
   grid-auto-columns: minmax(auto, 100px) minmax(610px, 3fr) minmax(315px, 2fr);
 }
 
-// Skills section - Vertical heading / 2 equal boxes
+// Skills section: vertical heading / 2 equal boxes
 .row-h-1-1 {
   @extend %row;
   grid-template-columns: minmax(auto, 100px) auto auto;
+  grid-template-columns: minmax(auto, 100px) repeat(2, 1fr);
 }
 
-// Projects & Contact sections - Vertical heading / 1 box
-// OBS!! Only contact in this branch!
+// Contact section: vertical heading / 1 box
 .row-h-1 {
   @extend %row;
   grid-template-columns: minmax(auto, 100px) auto;
@@ -99,4 +73,15 @@ section {
   margin: auto;
   border-radius: 50%;
   background: url(../images/ola04.jpg) 40% 0 / cover no-repeat;
+}
+
+// About | Skills | Contact details
+.details {
+  max-width: 800px;
+  > *:first-child {
+    margin-bottom: 2rem;
+  }
+  p {
+    padding: 0.5rem 0;
+  }
 }
