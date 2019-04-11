@@ -91,6 +91,13 @@ function toggleMenu() {
 // Close menu list if outside click
 document.addEventListener("click", clickOutside);
 
+// Close Menu if Link is Clicked
+menuList.addEventListener("click", e => {
+  if (e.target.tagName === "A") {
+    menuList.classList.remove("show");
+  }
+});
+
 function clickOutside(e) {
   if (!e.target.closest(".menu-list") && !e.target.closest(".menu-icon")) {
     menuList.classList.remove("show");
