@@ -4,9 +4,13 @@
   align-items: center;
   font: 1.3rem $logo-font;
   color: $secondary-dark;
-  img {
-    height: 2.5rem;
-    width: 2.5rem;
+  a {
+    height: 2.875rem;
+    padding: 3px;
+    img {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
   }
   span {
     padding-left: 1rem;
