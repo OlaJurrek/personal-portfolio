@@ -9,11 +9,12 @@
     "url": "https://github.com/OlaJurrek/personal_portfolio.git"
   },
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive --output-style compressed"
+    "build": "sass --no-source-map --style=compressed scss/main.scss dist/css/main.css"
   },
   "author": "Aleksandra Jurek",
   "license": "MIT",
-  "dependencies": {
-    "node-sass": "^4.11.0"
+  "dependencies": {},
+  "devDependencies": {
+    "sass": "^1.32.2"
   }
 }
